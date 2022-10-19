@@ -8,88 +8,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="form">
-        <h1 id="title">Support Engineer Survey Form</h1>
-        <p id="description">Thank you for taking the time to express a day in the life of a Support Engineer</p>
-    </section>
-    <section class="form">
+    <main>
+        <header>
+            <h1>Support Engineer Survey Form</h1>
+        </header>
         <form id="survey-form">
-            <div class="survey-field" id="info">
-                <label id="name-label">Name</label>
-                <input type="text" id="name" placeholder="Enter your name..." required>
-        </div>
-        <div class="survey-field">
-            <label id="email-label">Email</label>
-            <input type="email" id="email" placeholder="Enter your email..." required>
-        </div>
-        <div class="survey-field">
-            <label id="number-label">Age</label>
-            <input type="number" id="age" placeholder="Enter your age..." required min="18" max="100">
-        </div>
-        <div class="survey-field">
-        <p>Which option better describes you at this moment?</p>
-        <select id="dropdown" name="feeling" class="form-control" required >
-            <option disabled selected value>
-                Select your current humor
-            </option>
-            <option value="Explode">
-                Burnout soon
-            </option>
-            <option value="Relax">
-                Chill (I'm lying)
-            </option>
-            <option value="Over">
-                Overloaded
-            </option>
-            <option value="Stressed">
-                Stressed
-            </option>
-            <option value="other">Other</option>
-        </select>            
-        </div>
-
-        <div class="survey-field">
-            <p>Would you recommend someone to became a Support Engineer?</p>
-            <label>
-                <input type="radio" name="recommend" value="sure" class="input-radio" checked>
-                Sure!
-            </label>
-            <label>
-                <input type="radio" name="recommend" value="maybe" class="input-radio">
-                Maybe I would...
-            </label>
-            <label>
-                <input type="radio" name="recommend" value="no" class="input-radio">
-                Not at all!
-            </label>
-        </div>
-        <div class="survey-field">
-            <p>Which things do you consider painful to deal with everyday?</p>
-            <label>
-                <input type="checkbox" name="prefer" value="call" class="input-checkbox">Customer calls
-            </label>
-            <label>
-                <input type="checkbox" name="prefer" value="pulse" class="input-checkbox">Fill PULSE
-            </label>
-            <label>
-                <input type="checkbox" name="prefer" value="rca" class="input-checkbox">Find root cause
-            </label>
-            <label>
-                <input type="checkbox" name="prefer" value="notes" class="input-checkbox">Search for Notes
-            </label>
-            <label>
-                <input type="checkbox" name="prefer" value="vh" class="input-checkbox">Very High cases
-            </label>
-        </div>
-        <div class="survey-field">
-            <p>Any other comments regarding this occupation?</p>
-            <textarea id="comments" placeholder="Enter your comments here..."></textarea>
-        </div>
-
-        <div class="survey-field">
-            <button class="button" type="submit" id="submit">Submit</button>
-        </div>
-    </form>
-    </section>
+            <section class="survey-field" id="info">
+                <label id="name-label">
+                    Please enter your full name
+                </label>
+                <input type="text" id="name" placeholder="Name here..." required>
+                
+                <label id="email-label">
+                    Please enter your e-mail
+                </label>
+                <input type="email" id="email" placeholder="E-mail here..." required>
+                <label id="number-label">
+                    Please inform your age
+                </label>
+                <input type="number" id="age" placeholder="Age here..." required min="18" max="100">
+            </section>
+            <section class="survey-field" id="moment">
+                <p>Which option better describes you at this moment?</p>
+                <select id="dropdown" name="feeling" class="form-control" required >
+                    <option disabled selected value>
+                        Select your current humor
+                    </option>
+                    <option value="Quit">
+                        About to quit
+                    </option>
+                    <option value="Explode">
+                        Burnout soon
+                    </option>
+                    <option value="Relax">
+                        Chill (I'm lying)
+                    </option>
+                    <option value="Over">
+                        Overloaded
+                    </option>
+                    <option value="Stressed">
+                        Stressed
+                    </option>
+                    <option value="other">Other</option>
+                </select>            
+            </section>
+            <section class="survey-field" id="recommend">
+                <p>Would you recommend to someone to become a Support Engineer?</p>
+                <label>
+                    <input type="radio" name="recommend" value="sure" class="input-radio" checked>
+                    Sure!
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="maybe" class="input-radio">
+                    Maybe I would...
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="no" class="input-radio">
+                    No.
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="not" class="input-radio">
+                    Definetively not!
+                </label>
+            </section>
+            <section class="survey-field" id="painful">
+                <p>Which things do you consider painful to deal with everyday?</p>
+                <label>
+                    <input type="checkbox" name="prefer" value="call" class="input-checkbox">Customer calls
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="pulse" class="input-checkbox">Fill PULSE
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="rca" class="input-checkbox">Find root cause
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="notes" class="input-checkbox">Search for Notes
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="vh" class="input-checkbox">Very High cases
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="all" class="input-checkbox">All previous options
+                </label>
+            </section>
+            <section class="survey-field" id="comments">
+                <p>Any other comments regarding this occupation?</p>
+                <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+            </section>
+            
+            <section class="survey-field">
+                <button class="button" type="submit" id="submit">Submit</button>
+                <p>Thank you for taking the time share a day in the life of a Support Engineer</p>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>Form created by <a href="https://www.linkedin.com/joao-giordani">João Giordani</a> to complete a FreeCodeCamp challenge</p>
+    </footer>
 </body>
 </html>
