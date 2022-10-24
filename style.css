@@ -8,17 +8,16 @@
 
 body {
     background-color: rgb(218, 191, 243);
-    margin-top: 25px;
     min-height: 100%;
+    text-align: center;
 }
 
 header {
-    margin-bottom: 25px;
+    padding: 35px;
 }
 
 main {
-    padding: 25px;
-    text-align: center;
+    min-height: calc(100vh - 108px - 29px);
 }
 
 form {
@@ -37,8 +36,29 @@ select {
     margin-top: 10px;
 }
 
-section input {
-    margin-top: 10px;
+section#info label {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+}
+
+section#info input {
+    width: 200px;
+}
+
+section#recommend label {
+    display: block;  
+}
+
+section#painful label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+section#painful input {
+    margin-right: 10px;
+    margin-left: 43%;
 }
 
 textarea {
@@ -53,6 +73,7 @@ footer {
     text-align: center;
     padding: 5px;
     bottom: 0;
+    margin-top: 10px;
 }
 
 footer a {

@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Support Engineer Survey Form</h1>
+    </header>
     <main>
-        <header>
-            <h1>Support Engineer Survey Form</h1>
-        </header>
         <form id="survey-form">
             <section class="survey-field" id="info">
                 <label id="name-label">
                     Please enter your full name
                 </label>
                 <input type="text" id="name" placeholder="Name here..." required>
-                
+                <br>
                 <label id="email-label">
                     Please enter your e-mail
                 </label>
                 <input type="email" id="email" placeholder="E-mail here..." required>
+                <br>
                 <label id="number-label">
                     Please inform your age
                 </label>
@@ -59,12 +60,12 @@
                     Sure!
                 </label>
                 <label>
-                    <input type="radio" name="recommend" value="maybe" class="input-radio">
-                    Maybe I would...
-                </label>
-                <label>
                     <input type="radio" name="recommend" value="no" class="input-radio">
                     No.
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="maybe" class="input-radio">
+                    Maybe I would...
                 </label>
                 <label>
                     <input type="radio" name="recommend" value="not" class="input-radio">
