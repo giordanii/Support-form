@@ -9,6 +9,7 @@
 body {
     background-color: rgb(218, 191, 243);
     margin-top: 25px;
+    min-height: 100%;
 }
 
 header {
@@ -51,6 +52,7 @@ footer {
     background-color: black;
     text-align: center;
     padding: 5px;
+    bottom: 0;
 }
 
 footer a {
